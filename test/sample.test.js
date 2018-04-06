@@ -8,6 +8,6 @@ describe("Sample test", () => {
     sender();
 
     expect(postmark.Client).toHaveBeenCalled();
-    expect(postmark.Client().sendEmailWithTemplate).toHaveBeenCalled();
+    expect(postmark.Client.sendEmailWithTemplate).toHaveBeenCalled();
   });
 });
